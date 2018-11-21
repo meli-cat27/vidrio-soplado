@@ -1,0 +1,235 @@
+<html>
+   <head>
+		<style>
+		body{
+			margin: 0px;
+			font-family: 'Open Sans',sans-serif;
+	    }
+	    header{
+		   width: 50%;
+		   height: 50%;
+		   background: #333;
+		   color: #fff;
+		   
+		   position: fixed;
+		   top:0;
+		   left:0;
+		   z-index: 100;
+		}
+	    video {
+			position: fixed;
+	    
+			min-width: 100%;
+			min-height: 100%;
+	    
+			-transform: translateX(-50%) translateY(%50);
+	    
+			z-index: -1;
+	    }
+		
+		.trans{
+		   background-color: #ffffff;
+		   opacity: 0.5;
+		}
+		#menu-bar{
+		   display:none;
+		}
+		
+		header label{
+		   float: right;
+		   font-size: 28px;
+		   margin: 6px 0;
+		   cursor: pointer;
+		}
+		
+		.menu{
+		   position:absolute;
+		   top:0;
+		   left:0;
+		   width: 100%
+		   height: 100vh;
+		   background: rgba(51,51,51,0.9);
+		   transition: all 0.5s;
+		   /* transform: translateX(-100%); */
+		   margin-top:55px;
+		}
+		
+		.menu a{
+		   display:block;
+		   color: #fff;
+		   height: 50px;
+		   text-decoration: none;
+		   padding: 15px;
+		   /* border-bottom: 1px solid rgba(255,255,255,0.9); */
+		   
+		}
+		
+		.menu a:hover{
+		   background: rgba(255,255,255,0.3);
+		}
+		.contenedor{
+		   width: 98%;
+           margin:auto;
+		}
+		
+		#menu-bar:checked ~ .menu {
+		   transform: translateX(0%);
+		}
+		
+		header .contenedor{
+			display:table;	
+		}
+		
+		h1{
+		   float: left;
+		}
+		</style
+		
+		
+<!-- link href="http://elnuevotriangulodecristal.com/image/data/favicon.jpg" rel="icon" /-->
+
+<!-- siscript type="text/javascript" src="http://elnuevotriangulodecristal.com/catalog/view/javascript/jquery/jquery-1.7.1.min.js"></script-->
+
+<!-- script type="text/javascript" src="http://elnuevotriangulodecristal.com/catalog/view/javascript/jquery/ui/jquery-ui-1.8.16.custom.min.js"></script -->
+
+<!-- link rel="stylesheet" type="text/css" href="http://elnuevotriangulodecristal.com/catalog/view/javascript/jquery/ui/themes/ui-lightness/jquery-ui-1.8.16.custom.css" />
+
+<script type="text/javascript" src="http://elnuevotriangulodecristal.com/catalog/view/javascript/common.js"></script>
+
+<script type="text/javascript" src="http://elnuevotriangulodecristal.com/catalog/view/javascript/jquery/nivo-slider/jquery.nivo.slider.pack.js"></script-->
+
+<!--link href="http://elnuevotriangulodecristal.com/catalog/view/theme/triangulo/css/fonts.css" rel="stylesheet" type="text/css" media="screen" /-->
+
+<!-- link href="http://elnuevotriangulodecristal.com/catalog/view/theme/triangulo/css/global.css" rel="stylesheet" type="text/css" media="screen" /-->
+
+<!--si link rel="stylesheet" href="http://elnuevotriangulodecristal.com/resources/nivo/themes/default/default.css" type="text/css" media="screen" /-->
+
+<!-- link rel="stylesheet" href="http://elnuevotriangulodecristal.com/resources/nivo/nivo-slider.css" type="text/css" media="screen" /-->
+
+<!--script type="text/javascript" src="js/lib.js"></script-->
+
+<!--script type="text/javascript" src="http://elnuevotriangulodecristal.com/js/jquery.jcarousel.min.js"></script-->
+
+<!--link rel="stylesheet" type="text/css" href="http://elnuevotriangulodecristal.com/catalog/view/theme/triangulo/css/carousel.css" /-->
+
+<!--link href="http://elnuevotriangulodecristal.com/catalog/view/theme/triangulo/css/form.css" rel="stylesheet" type="text/css" media="screen" /-->
+
+<!-- script type="text/javascript" src="http://elnuevotriangulodecristal.com/js/jquery.validate.js"></script-->
+
+<!-- link rel="stylesheet" type="text/css" href="http://elnuevotriangulodecristal.com/catalog/view/theme/triangulo/stylesheet/stylesheet.css" /-->
+
+<link rel="stylesheet" type="text/css" href="http://elnuevotriangulodecristal.com/catalog/view/theme/triangulo/stylesheet/slideshow.css" media="screen" />
+
+		<title>Catland</title>
+		<meta name="viewport" content="width=device-width. user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+		<link rel="icon" type="image/png" href="./media/icon.jpe" />
+	    <!-- embed src="./media/music.mp3" hidden="true" loop="true"--> 
+		
+		<script type="text/javascript"><!--
+
+$(document).ready(function() {
+
+	$('#slider0').nivoSlider({
+
+        effect: 'fade',
+
+        slices: 15, 
+
+        boxCols: 8,
+
+        boxRows: 4, 
+
+        animSpeed: 500, 
+
+        pauseTime: 5000, 
+
+        startSlide: 0, 
+
+        directionNav: true, 
+
+        controlNav: false, 
+
+        controlNavThumbs: false, 
+
+        pauseOnHover: true, 
+
+        manualAdvance: false,
+
+        prevText: 'Prev', 
+
+        nextText: 'Next',
+
+        randomStart: false, 
+
+    });
+
+});
+
+--></script>
+		
+   </head>
+      <body background="vidro soplado.jpg" style="background-size:cover;">
+
+      <!-- video src="./media/steelecoaster.mp4" loop muted autoplay>	 </video-->
+	  <div>
+	  <marquee behavior ="alternate" scrollamount="20" class="trans" >
+         <font size="13" color="#000000"><em><b>Catland</b></em></font>
+      </marquee>	  
+	  </div>
+
+ <div id="content">
+		 
+		 <div class="contenedor">
+	      <input type="checkbox" id="menu-bar"/>
+	      <label class="icon-menu" for="menu-bar"></label>
+	       <nav class="menu">
+		     <a href="Index.html">Inicio</a> 
+			 <a href="Info.html">Info</a> 
+		     <a href="Historia.html">Historia</a> 
+		     <a href="Ejemplos.html">Ejemplos</a> 
+		     <a href="Contacto.html">Contacto</a>
+		   </nav>
+          </div>
+		  <div></div>
+	
+    <!--div class="slider-wrapper theme-default">
+
+        <div id="slider0" class="nivoSlider" style="width: 750px; height: 473px;">
+
+            <img src="http://elnuevotriangulodecristal.com/image/cache/data/PARED-750x473.jpg" alt="esferas pared" />
+  
+            <img src="http://elnuevotriangulodecristal.com/image/cache/data/candleholders_H-750x473.jpg" alt="candeleros" />
+
+            <img src="http://elnuevotriangulodecristal.com/image/cache/data/GRANIZADA-750x473.jpg" alt="esferas" />
+
+            <img src="http://elnuevotriangulodecristal.com/image/cache/data/ensaladera-750x473.jpg" alt="ensaladera" />
+
+            <img src="http://elnuevotriangulodecristal.com/image/cache/data/ambar-750x473.jpg" alt="ambar" />
+
+            <img src="http://elnuevotriangulodecristal.com/image/cache/data/decoracion/BOTELLAS-750x473.jpg" alt="botellas" />
+
+            <img src="http://elnuevotriangulodecristal.com/image/cache/data/botella delgada-450x450-750x473.jpg" alt="botella delgada" />
+
+            <img src="http://elnuevotriangulodecristal.com/image/cache/data/decoracion/botella marlene-750x473.jpg" alt="marlene" />
+
+            <img src="http://elnuevotriangulodecristal.com/image/cache/data/decoracion/ensaladeras-750x473.png" alt="ensaladeras" />
+
+            <img src="http://elnuevotriangulodecristal.com/image/cache/data/decoracion/flores-750x473.png" alt="flores" />
+
+            <img src="http://elnuevotriangulodecristal.com/image/cache/data/banners/29 años-750x473.jpg" alt="29 años" />
+
+            <img src="http://elnuevotriangulodecristal.com/image/cache/data/decoracion/luminarias-750x473.jpg" alt="luminarias" />
+
+            <img src="http://elnuevotriangulodecristal.com/image/cache/data/decoracion/pendientes-750x473.jpg" alt="pendientes" />
+
+       </div>
+
+    </div-->
+
+</div>
+
+<!--/div-->
+
+</body>
+</html>
+

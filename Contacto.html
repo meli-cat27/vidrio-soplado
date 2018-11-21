@@ -1,0 +1,188 @@
+<html>
+   <head>
+		<title>Catland</title>
+		<style>
+		body{
+			margin: 0px;
+			font-family: 'Open Sans',sans-serif;
+			background-color: #2e2e2e;
+	    }
+	    header{
+		   width: 50%;
+		   height: 50%;
+		   background: #333;
+		   color: #fff;
+		   
+		   position: fixed;
+		   top:0;
+		   left:0;
+		   z-index: 100;
+		}
+	    video {
+			position: fixed;
+	    
+			min-width: 100%;
+			min-height: 100%;
+	    
+			-transform: translateX(-50%) translateY(%50);
+	    
+			z-index: -1;
+	    }
+		
+		.trans{
+		   background-color: #ffffff;
+		   opacity: 0.5;
+		}
+		#menu-bar{
+		   display:none;
+		}
+		
+		header label{
+		   float: right;
+		   font-size: 28px;
+		   margin: 6px 0;
+		   cursor: pointer;
+		}
+		
+		.menu{
+		   position:absolute;
+		   top:0;
+		   left:0;
+		   width: 100%
+		   height: 100vh;
+		   background: rgba(51,51,51,0.9);
+		   transition: all 0.5s;
+		   /* transform: translateX(-100%); */
+		   margin-top:55px;
+		}
+		
+		.menu a{
+		   display:block;
+		   color: #fff;
+		   height: 50px;
+		   text-decoration: none;
+		   padding: 15px;
+		   border-bottom: 1px solid rgba(255,255,255,0.9); 
+		   
+		}
+		
+		.menu a:hover{
+		   background: rgba(255,255,255,0.3);
+		}
+		.contenedor{
+		   width: 98%;
+           margin:auto;
+		}
+		
+	    .texto{
+		   width: 80%;
+           margin:120px;
+		   color:#000000;
+		   font-size:18px;
+		    background-color: rgba(255,255,255,0.3);
+		   
+		}
+		
+		.imagen{
+		   width: 80%
+           margin:120px;
+		   color:#fff;
+		}
+		
+		
+		
+		#menu-bar:checked ~ .menu {
+		   transform: translateX(0%);
+		}
+		
+		header .contenedor{
+			display:table;	
+		}
+		
+		h1{
+		   float: left;
+		}
+		body {font-family: Arial, Helvetica, sans-serif;}
+		* {box-sizing: border-box;}
+
+		input[type=text], select, textarea {
+			width: 100%;
+			padding: 12px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			margin-top: 6px;
+			margin-bottom: 16px;
+			resize: vertical;
+		}
+
+		input[type=submit] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		input[type=submit]:hover {
+			background-color: #45a049;
+		}
+
+		.container {
+			border-radius: 5px;
+			background-color: #f2f2f2;
+			padding: 20px;
+			margin: 60px 180px;
+		}
+		</style>
+		<meta name="viewport" content="width=device-width. user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+		<link rel="icon" type="image/png" href="./media/icon.jpe" />
+   </head>
+   <!--body background="media/07.jpg" style="background-size:cover;"-->
+   <body background="vidro soplado.jpg" style="background-size:cover;">
+
+	  <div>
+	  <marquee behavior ="alternate" scrollamount="20" class="trans" >
+         <font size="13" color="#000000"><em><b>Catland</b></em></font>
+      </marquee>	  
+	  </div>
+
+         <div class="contenedor">
+	      <input type="checkbox" id="menu-bar"/>
+	      <label class="icon-menu" for="menu-bar"></label>
+	       <nav class="menu">
+		     <a href="Index.html">Inicio</a> 
+			 <a href="Info.html">Info</a> 
+		     <a href="Historia.html">Historia</a> 
+		     <a href="Ejemplos.html">Ejemplos</a> 
+		     <a href="Contacto.html">Contacto</a> 
+		   </nav>
+         </div>
+		 
+		 <div class="container">
+		  <form action="/">
+			<label for="fname">Nombre</label>
+			<input type="text" id="fname" name="firstname" placeholder="Nombres..">
+
+			<label for="lname">Apellido</label>
+			<input type="text" id="lname" name="lastname" placeholder="Apellido..">
+
+			<label for="country">Ciudad</label>
+			<select id="country" name="country">
+			  <option value="australia">Mexico</option>
+			  <option value="canada">Canada</option>
+			  <option value="usa">USA</option>
+			</select>
+
+			<label for="subject">Asunto</label>
+			<textarea id="subject" name="subject" placeholder="Escribe el asunto.." style="height:200px"></textarea>
+
+			<input type="submit" value="Submit">
+		  </form>
+		</div>
+
+
+   </body>
+</html>
+

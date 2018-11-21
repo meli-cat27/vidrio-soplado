@@ -1,0 +1,144 @@
+﻿<html>
+   <head>
+		<title>Catland</title>
+		<style>
+		body{
+			margin: 0px;
+			font-family: 'Open Sans',sans-serif;
+			background-color: #2e2e2e;
+	    }
+	    header{
+		   width: 50%;
+		   height: 50%;
+		   background: #333;
+		   color: #fff;
+		   
+		   position: fixed;
+		   top:0;
+		   left:0;
+		   z-index: 100;
+		}
+	    video {
+			position: fixed;
+	    
+			min-width: 100%;
+			min-height: 100%;
+	    
+			-transform: translateX(-50%) translateY(%50);
+	    
+			z-index: -1;
+	    }
+		
+		.trans{
+		   background-color: #ffffff;
+		   opacity: 0.5;
+		}
+		#menu-bar{
+		   display:none;
+		}
+		
+		header label{
+		   float: right;
+		   font-size: 28px;
+		   margin: 6px 0;
+		   cursor: pointer;
+		}
+		
+		.menu{
+		   position:absolute;
+		   top:0;
+		   left:0;
+		   width: 100%
+		   height: 100vh;
+		   background: rgba(51,51,51,0.9);
+		   transition: all 0.5s;
+		   /* transform: translateX(-100%); */
+		   margin-top:55px;
+		}
+		
+		.menu a{
+		   display:block;
+		   color: #fff;
+		   height: 50px;
+		   text-decoration: none;
+		   padding: 15px;
+		   border-bottom: 1px solid rgba(255,255,255,0.9); 
+		   
+		}
+		
+		.menu a:hover{
+		   background: rgba(255,255,255,0.3);
+		}
+		.contenedor{
+		   width: 98%;
+           margin:auto;
+		}
+		
+	    .texto{
+		   width: 80%;
+           margin:120px;
+		   color:#000000;
+		   font-size:18px;
+		    background-color: rgba(255,255,255,0.3);
+		   
+		}
+		
+		.imagen{
+		   width: 80%
+           margin:120px;
+		   color:#fff;
+		}
+		
+		
+		
+		#menu-bar:checked ~ .menu {
+		   transform: translateX(0%);
+		}
+		
+		header .contenedor{
+			display:table;	
+		}
+		
+		h1{
+		   float: left;
+		}
+		</style>
+		<meta name="viewport" content="width=device-width. user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+		<link rel="icon" type="image/png" href="./media/icon.jpe" />
+   </head>
+   <body background="vidro soplado.jpg" style="background-size:cover;">
+   <!--BODY BACKGROUND="vidro soplado.jpg" width="1500" heigth="1500"-->
+
+	  <div>
+	  <marquee behavior ="alternate" scrollamount="20" class="trans" >
+         <font size="13" color="#000000"><em><b>Catland</b></em></font>
+      </marquee>	  
+	  </div>
+
+         <div class="contenedor">
+	      <input type="checkbox" id="menu-bar"/>
+	      <label class="icon-menu" for="menu-bar"></label>
+	       <nav class="menu">
+		     <a href="Index.html">Inicio</a> 
+			 <a href="Info.html">Info</a> 
+		     <a href="Historia.html">Historia</a> 
+		     <a href="Ejemplos.html">Ejemplos</a> 
+		     <a href="Contacto.html">Contacto</a> 
+		   </nav>
+         </div>
+		 
+		 <div class="texto">
+		    <b>Su primer uso, que se remonta a tiempos muy antiguos, era para objetos de bisutería. Añadiéndole diversos minerales durante el fundido se obtenían cuentas de diferentes colores, tamaños y formas.</b>
+			<br><b>Se desconoce con precisión el origen de esta técnica, los datos más antiguos conocidos se remontan a la zona de Siria, hacia el siglo I a. C., difundiéndose por todo el Mediterráneo, a través del Imperio Romano.</b>
+			<br><b>En España, uno de los mayores exponentes del soplado de vidrio fue don Faustino Martín Plaza (1932-2007), el cual ganó el I Concurso Interprovincial de Soplado de Vidrio Químico en el año 1973.</b>
+		 <div class="imagen" align="center">
+		    <img src="vidriosoplado2.jpg" width="500" height="300"/>
+		 </div>
+		</div>
+<a href="https://www.sixflags.com.mx/es/mexico"> <p style="color: #FF00CC ;">six flags </p> </a>
+<a href="http://www.bosquemagico.com/"> <p style="color: #FF00CC ;"> Bosque maguico </p> </a>
+<a href="https://www.selvamagica.com.mx/"> <p style="color: #FF00CC ;"> Selva maguica </p> </a>
+
+   </body>
+</html>
+
